@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+.inputWrapper{
+    display: grid;
+    justify-items: center;
+}
+
+:root{
+    --textcolor: rgb(31, 151, 151);
+    --position: relative ;
+    --left:0vw ;
+    --fontsize: 4vh;
+    --fillcolor: #082436;
+    --font: 'Graduate', cursive;
+
+}   
+
+.text{
+    color: var(--textcolor);
+    position: relative;
+    left: var(--left);
+    top: 20vh;
+    font-size: var(--fontsize) ;
+    background-color: var(--fillcolor);
+    font-family: var(--font);
+    border-color:var(--fillcolor);
+   
+    
+}
+.number{
+    color: var(--textcolor);
+    position: var(--position);
+    left:var(--left);
+    top: 25vh;
+    font-size: var(--fontsize) ;
+    background-color: var(--fillcolor);
+    font-family: var(--font);
+    border-color:var(--fillcolor);
+    border-style: inset;
+}

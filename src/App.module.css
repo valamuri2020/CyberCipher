@@ -1,0 +1,207 @@
+ .buttonWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 5%;
+    
+} 
+
+:root{
+    --mainbuttonspadding: 10vh;
+    --textsize: 8vh; 
+    --margin-left: 3.8vw;
+    --margin-top: 17vh;
+    --color-encrypt:#FC427B;
+    --color-decrypt:#ff8300;
+    --curvature: 20%;
+    --hover-color: beige;
+    --sidepadding: 15vw;
+}
+
+.btnEncrypt{
+    padding-top: var(--mainbuttonspadding);
+    padding-bottom: var(--mainbuttonspadding);
+    padding-right: var(--sidepadding);
+    padding-left: var(--sidepadding);
+    font-size: var(--textsize);
+    margin-left: var(--margin-left);
+    margin-top: var(--margin-top);
+    background-color:var(--color-encrypt);
+    border-color: var(--color-encrypt);
+    border-radius: var(--curvature);
+    -webkit-transition: .3s all ease-in;
+    transition: .3s all ease-in;
+    border: 2px solid transparent;
+    color: rgba(0, 0, 0, 0.842);
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer ;
+ 
+}
+.btnEncrypt:hover, .btnEncrypt:focus {
+    -webkit-box-shadow: 0px 0px 20px 15px var(--color-encrypt);
+    box-shadow: 0px 0px 30px 20px var(--color-encrypt);
+    background-color:#fb6a96;
+    color:var(--hover-color);
+    cursor: pointer ;
+}
+
+.btnDecrypt{
+    padding-top: var(--mainbuttonspadding);
+    padding-bottom: var(--mainbuttonspadding);
+    padding-right: var(--sidepadding);
+    padding-left: var(--sidepadding);
+    font-size: var(--textsize);
+    margin-right: var(--margin-left);
+    margin-top: var(--margin-top) ; 
+    background-color: var(--color-decrypt);
+    border-color: var(--color-decrypt);
+    border-radius: var(--curvature);
+    -webkit-transition: .3s all ease-in;
+    transition: .3s all ease-in;
+    border: 2px solid transparent; 
+    color: rgba(0, 0, 0, 0.842);
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer ;
+}
+
+.btnDecrypt:hover, .btnDecrypt:focus {
+    -webkit-box-shadow: 0px 0px 20px 15px var(--color-decrypt);
+    box-shadow: 0px 0px 30px 20px var(--color-decrypt);
+    background-color:#f3922b;
+    color:var(--hover-color);
+    cursor: pointer ;
+}
+
+:root{
+    --mainbuttonspaddingpage2: 1vh;
+    --textsizepage2: 4vh; 
+    --margin-leftpage2: 1vw;
+    --margin-toppage2: 17vh;
+    --color-encryptpage2:#6c5ce7;
+    --color-decryptpage2:#ff8300;
+    --curvaturepage2: 20%;
+    --hover-colorpage2: beige;
+}
+
+
+.btnSubmit{
+    position: relative;
+    top: 20vh;
+    left: 46.5vw;
+    padding-top: var(--mainbuttonspaddingpage2);
+    padding-bottom: var(--mainbuttonspaddingpage2);
+    font-size: var(--textsizepage2);
+    margin-right: var(--margin-leftpage2);
+    margin-top: var(--margin-toppage2) ; 
+    background: #6c5ce7;
+    border-color: #6c5ce7;
+    border-radius: var(--curvaturepage2);
+    -webkit-transition: .3s all ease-in;
+    transition: .3s all ease-in;
+    border: 2px solid transparent; 
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer ;
+}
+
+.btnSubmit:hover, .btnSubmit:focus {
+    -webkit-box-shadow: 0px 0px 2px 15px#6c5ce7;
+    box-shadow: 0px 0px 30px 2px #6c5ce7;
+    background-color: #8275e4;
+    color: var(--hover-colorpage2);
+    cursor: pointer ;
+}
+
+.btnHome{
+    position: relative;
+    top: 20vh;
+    left: 45%;
+    padding-top: var(--mainbuttonspaddingpage2);
+    padding-bottom: var(--mainbuttonspaddingpage2);
+    font-size: var(--textsizepage2);
+    margin-right: var(--margin-leftpage2);
+    margin-top: var(--margin-toppage2) ; 
+    background: #082436;
+    border-color:#082436;
+    border-radius: var(--curvaturepage2);
+    -webkit-transition: .3s all ease-in;
+    transition: .3s all ease-in;
+    border: 2px solid transparent; 
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer ;
+    color: cornflowerblue;
+}
+
+.btnHome:hover, .btnHome:focus {
+    -webkit-box-shadow: 0px 0px 5px 15p#082436;
+    box-shadow: 0px 0px 30px 5px #082436;
+    background-color: #133e58;
+    color: rgb(21, 221, 204);
+    cursor: pointer ;
+}
+.btnShare{
+    position: fixed;
+    top: 45vh;
+    left: 47.3%;
+    padding-top: var(--mainbuttonspaddingpage2);
+    padding-bottom: var(--mainbuttonspaddingpage2);
+    font-size: var(--textsizepage2);
+    margin-right: var(--margin-leftpage2);
+    margin-top: var(--margin-toppage2) ; 
+    background: #082436;
+    border-color:#082436;
+    border-radius: 50%;
+    -webkit-transition: .3s all ease-in;
+    transition: .3s all ease-in;
+    border: 2px solid transparent; 
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer ;
+    color: cornflowerblue;
+}
+
+.btnShare:hover, .btnShare:focus {
+    -webkit-box-shadow: 0px 0px 10px 15p#082436;
+    box-shadow: 0px 0px 30px 10px #082436;
+    background-color: #133e58;
+    color: rgb(21, 221, 204);
+    cursor: pointer ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+.inputWrapper{
+    display: grid;
+    justify-items: center;
+}
+
+:root{
+    --textcolor: rgb(31, 151, 151);
+    --position: relative ;
+    --left:0vw ;
+    --fontsize: 4vh;
+    --fillcolor: #082436;
+    --font: 'Graduate', cursive;
+
+}   
+
+.text{
+    color: var(--textcolor);
+    position: relative;
+    left: var(--left);
+    top: 20vh;
+    font-size: var(--fontsize) ;
+    background-color: var(--fillcolor);
+    font-family: var(--font);
+    border-color:var(--fillcolor);
+   
+    
+}
+.number{
+    color: var(--textcolor);
+    position: var(--position);
+    left:var(--left);
+    top: 25vh;
+    font-size: var(--fontsize) ;
+    background-color: var(--fillcolor);
+    font-family: var(--font);
+    border-color:var(--fillcolor);
+    border-style: inset;
+}

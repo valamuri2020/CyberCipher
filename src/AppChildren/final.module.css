@@ -1,0 +1,24 @@
+.head{
+    color:#6c5ce7;
+    font-family: 'Encode Sans', sans-serif;
+    text-align: center;
+    font-size: 270%;
+    position: relative;
+    top: 6vh;
+}
+
+.output{
+    color:#FC427B;
+    font-family: 'Open Sans Condensed', sans-serif;
+    position: relative;
+    top: 14vh;
+    text-align: center;
+    font-size: 375%;
+    font-family: 'Graduate', cursive;
+    padding-left: 0vw;
+   
+  }
+.output:hover{
+      cursor: pointer;
+      color:#f00f53;
+  }

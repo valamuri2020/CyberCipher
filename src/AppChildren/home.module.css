@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600&family=Patua+One&display=swap');
+
+.introHeader {
+    text-align: center;
+    color:  #6c5ce7;
+    font-family: "Encode Sans";
+    font-size: 52px;
+    
+}
+.subHeader{
+    text-align: center;
+    font-family: "Encode Sans";
+    color: rgb(31, 151, 151);
+    font-size: 23px;
+    
+    
+}
