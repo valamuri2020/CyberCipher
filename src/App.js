@@ -2,19 +2,11 @@ import React, {useState} from 'react';
 //Components
 import Home from './AppChildren/Home'
 import $ from 'jquery'
-import Input from './AppChildren/Input';
 import Loader from "./AppChildren/Loader"
 import webshare from './AppChildren/Webshare'
 import Final from './AppChildren/Final'
 //Styling
 import AppStyle from './App.module.css'
-
-function transitionPage1(){
-  $(".Home").fadeOut(375, ()=>{
-    $("#EnterMessage").show();
-});
-$("#initialPage").fadeOut(375); 
-}
 
 function App () {
   const [inputBoxText, setInputBoxText] = useState('');
@@ -24,6 +16,12 @@ function App () {
   const [shift, setShift] = useState('');
   const [output, setOutput] = useState('');
 
+    const transitionPage1 = () => {
+      $(".Home").fadeOut(375, ()=>{
+        $("#EnterMessage").show();
+    });
+      $("#initialPage").fadeOut(375); 
+    }
     const handleClickDecrypt = () => {
       setInputBoxText('Code');
       setOutputMessage('Message');
@@ -57,10 +55,7 @@ function App () {
       setShift(event.target.value);
     }
 
-
-      //write enc and dec functions using input and shift, use ternary with condition as loading message text to determine which function to be called. set result as a prop of Final componenet and then assign it to the h2
-
-      const goencrypt = (input, shift) => {
+    const goencrypt = (input, shift) => {
         var solved = '';
         for (let i=0; i < input.length; i++){
             var asciiNum = input[i].charCodeAt()
@@ -74,7 +69,7 @@ function App () {
         return solved;
       } 
     
-      const godecrypt = (input, shift) => {
+    const godecrypt = (input, shift) => {
         var solved = '';
           for (let i=0; i < input.length; i++){
               var asciiNum = input[i].charCodeAt()
@@ -88,7 +83,7 @@ function App () {
           }
           return solved;
       }
-      const displayNone = {display: "none"};
+    const displayNone = {display: "none"};
     
       return(
       <div id = 'parent' >
