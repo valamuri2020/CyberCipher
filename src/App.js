@@ -45,19 +45,11 @@ function App () {
         $("#Final").show();
       },2000);
       
+     
       if (loadingMessage === 'Encrypting...'){
-        parseInt(shift);
-        if (shift > 26){
-          setShift(shift % 26);
-        }
-        
         setOutput(goencrypt(input, -shift));
-        console.log(shift);
       }  
       else{
-        if (shift > 26){
-          setShift( shift % 26)
-        }
         setOutput(godecrypt(input, shift));
       } 
       
@@ -71,11 +63,7 @@ function App () {
       setShift(event.target.value);
      
     }
-
-    // PROBLEM 1: this code works for caps numbers, so ascii nums are different for lowercase, so messes up encoding.
-    // PROBLEM 2: encoding and decoding shift letters to left. so even numbers and chars turn into letters and letters turn into nums
-    // PROBLEM 3: need to mod shift by 26 for both 
-   
+     
   function goencrypt(input, shift){
     var solved = '';
     for (var i=0; i < input.length; i++){
