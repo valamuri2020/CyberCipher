@@ -17,7 +17,7 @@ A React application that acts as an educational tool about algorithms and cyber 
 
 #### This app will be deployed to the web using Heroku very soon!
 
-##### If you find any bugs that were not caught during development, please open an issue so we can work on resolving it. I strive to make my work so that I'm proud of it as I put in my best efforts into all my work.
+##### If you find any bugs that were not caught during development, please open an issue so we can work on resolving it. I strive to make my work as best as possible.
 
 #### Thank you for viewing my project,
 #### Vivek Alamuri
